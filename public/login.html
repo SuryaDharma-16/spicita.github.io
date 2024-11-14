@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk</title>
+    <link rel="stylesheet" href="/src/css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Prociono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Nav starts -->
+    <nav class="navbar">
+      <img src="/src/assets/Spicita Logo.svg" alt="Logo Spicita" class="nav-logo" />
+      <div class="nav-menus">
+        <a href="/public/index.html" class="menu">Beranda</a>
+        <a href="/public/about.html" class="menu">Tentang</a>
+        <a href="/public/article.html" class="menu">Berita & Artikel</a>
+      </div>
+      <i data-feather="menu" id="hamburger-menu"></i>
+    </nav>
+    <!-- Nav ends -->
+    <section class="content">
+      <main class="content-container">
+        <h3>Selamat Datang Kembali</h3>
+        <h6>Masukan Akun</h6>
+        <form action="/public/index.html">
+          <label for="uname">Nama pengguna</label><br />
+          <input type="text" placeholder="--Nama pengguna--" id="uname" /><br />
+          <label for="password">Kata sandi</label><br />
+          <input type="password" placeholder="--Kata sandi--" id="password" /><br />
+          <input type="submit" value="Masuk" id="masuk" />
+        </form>
+        <div class="login-extra">
+          <form action="">
+            <input type="checkbox" name="ingat-saya" id="#ingat-saya" />
+            <label for="ingat-saya">Ingat saya</label>
+          </form>
+          <div class="ask-register">
+            <p>Belum punya Akun?</p>
+            <a href="/public/register.html">Daftar</a>
+          </div>
+        </div>
+        <p class="google-cue">- atau masuk dengan -</p>
+        <button id="google-login">
+          <img src="/src/assets/google-logo.svg" alt="google" />
+          <a href="/public/index.html">Google</a>
+        </button>
+      </main>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+    <script src="/public/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar</title>
+    <link rel="icon" href="/src/assets/Spicita Logo.svg">
+    <link rel="stylesheet" href="/src/css/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Prociono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Nav starts -->
+    <nav class="navbar">
+      <img src="/src/assets/Spicita Logo.svg" alt="Logo Spicita" class="nav-logo" />
+      <div class="nav-menus">
+        <a href="/public/index.html" class="menu">Beranda</a>
+        <a href="/public/about.html" class="menu">Tentang</a>
+        <a href="/public/article.html" class="menu">Berita & Artikel</a>
+      </div>
+      <i data-feather="menu" id="hamburger-menu"></i>
+    </nav>
+    <!-- Nav ends -->
+    <section class="content">
+      <main class="content-container">
+        <h3>Selamat Datang di Spicita</h3>
+        <h6>Daftarkan Akun</h6>
+        <form action="/public/index.html">
+          <label for="fname">Nama depan</label><br />
+          <input type="text" placeholder="--Nama depan--" id="fname" /><br />
+          <label for="lname">Nama belakang</label><br />
+          <input
+            type="text"
+            placeholder="--Nama belakang--"
+            name="nama-belakang"
+            id="lname"
+          /><br />
+          <label for="password">Kata Sandi</label><br />
+          <input type="password" placeholder="--Kata sandi--" id="password" /><br />
+          <label for="confirm-password">Konfirmasi Kata Sandi</label><br />
+          <input
+            type="password"
+            placeholder="--Konfirmasi kata sandi--"
+            name="confirm-password"
+            id="confirm-password"
+          /><br />
+          <input type="submit" value="Daftar" id="daftar"/>
+        </form>
+        <div class="ask-login">
+          <p>Sudah punya akun?</p>
+          <a href="/public/login.html">Masuk</a>
+        </div>
+        <p class="google-cue">- atau daftar dengan -</p>
+        <button id="google-login">
+          <img src="/src/assets/google-logo.svg" alt="" />
+          <a href="/public/index.html">Google</a>
+        </button>
+      </main>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+    <script src="/public/js/register.js"></script>
+  </body>
+</html>
